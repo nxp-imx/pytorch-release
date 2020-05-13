@@ -1,4 +1,5 @@
 # About pytorch-release
+This release includes python binding package (.whl) for pytorch on aarch64 platform and also example to show how to use the pytroch engine. It is built from source: https://github.com/pytorch/pytorch.
 
 # Installation
 $ pip3 install /path/to/torch-1.5.0-cp37-cp37m-linux_aarch64.whl
