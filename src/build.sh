@@ -1,5 +1,8 @@
 #！/bin/bash
 
+# Copyright 2020 NXP
+# SPDX-License-Identifier: MIT
+
 # check out pytorch code
 git clone --recursive https://github.com/pytorch/pytorch
 cd pytorch
