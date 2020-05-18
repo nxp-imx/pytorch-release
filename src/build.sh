@@ -22,6 +22,7 @@ export CMAKE_PREFIX_PATH=/usr/bin
 python3 setup.py bdist_wheel
 
 # check the wheel file in dist folder
+# mv dist/*.whl topdir/whl
 
 
 # build the wheel file for torchvision
@@ -31,3 +32,4 @@ git reset --hard v0.6.0
 python3 setup.py bdist_wheel
 
 # check the wheel file in dist folder
+# mv dist/*.whl topdir/whl
