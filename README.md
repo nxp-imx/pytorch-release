@@ -1,8 +1,15 @@
 # About pytorch-release
-This release includes python binding package (.whl) for pytorch on aarch64 platform and also example to show how to use the pytroch engine. It is built from source: https://github.com/pytorch/pytorch.
+This release includes python binding source and wheel package(.whl) for pytorch on aarch64 platform and also example to show how to use the pytroch engine. It could be built from source: https://github.com/pytorch/pytorch and https://github.com/pytorch/vision.git. Currently it supports the native building on NXP aarch64 platform with BSP SDK.
+
+# Build
+Get the BSP SDK from nxp.com and git clone this repo.
+
+cd /path/to/pytorch-release/src
+./build.sh
 
 # Installation
 $ pip3 install /path/to/torch-1.5.0-cp37-cp37m-linux_aarch64.whl
+
 $ pip3 install /path/to/torchvision-0.6.0-cp37-cp37m-linux_aarch64.whl
 
 # API overview
@@ -54,3 +61,5 @@ File does not exist, download it from https://s3.amazonaws.com/model-server/inpu
 ('lynx, catamount', 1.1611212491989136)
 ('tiger, Panthera tigris', 0.20774540305137634)
 
+
+```
