@@ -2,15 +2,20 @@
 This release includes python binding source and wheel package(.whl) for pytorch on aarch64 platform and also example to show how to use the pytroch engine. It could be built from source: https://github.com/pytorch/pytorch and https://github.com/pytorch/vision.git. Currently it supports the native building on NXP aarch64 platform with BSP SDK.
 
 # Build
-Get the BSP SDK from nxp.com and build SDK images for one of the NXP aarch64 platforms. please edit the
+1. Get the latest IMX BSP from https://source.codeaurora.org/external/imx/imx-manifest.
+2. Set up the build environment for one of the NXP aarch64 platforms and edit the
 conf/local.conf to add the following dependency for pytorch native build:
 ```
 IMAGE_INSTALL_append = " python3-pip python3-wheel python3-pillow python3-setuptools python3-numpy python3-pyyaml python3-cffi python3-future cmake ninja packagegroup-core-buildessential"
 ```
-Clone this repo and execute the build script:
+3. Build the BSP images like the following command:
 ```
-cd /path/to/pytorch-release/src
-./build.sh
+$ bitbake imx-image-full
+```
+4. Clone this repo and execute the build script on NXP aarch64 platform:
+```
+$ cd /path/to/pytorch-release/src
+$ ./build.sh
 ```
 
 # Installation
