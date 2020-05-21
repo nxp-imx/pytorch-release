@@ -9,6 +9,7 @@ from torchvision import models
 from torchvision import transforms
 from PIL import Image
 import numpy as np
+import ssl
 
 def show_progress(count, block_size, total_size):
     downloaded = count * block_size
@@ -31,6 +32,7 @@ def download_file(url: str):
 
     return name
 
+ssl._create_default_https_context = ssl._create_unverified_context
 model_file = download_file('https://download.pytorch.org/models/mobilenet_v2-b0353104.pth')
 label_file = download_file('https://raw.githubusercontent.com/Lasagne/Recipes/master/examples/resnet50/imagenet_classes.txt')
 image_file = download_file('https://s3.amazonaws.com/model-server/inputs/kitten.jpg')
