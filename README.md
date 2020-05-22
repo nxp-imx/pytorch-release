@@ -8,7 +8,7 @@ An example to show how to use the pytroch engine is included as well. Currently 
 2. Set up the build environment for one of the NXP aarch64 platforms and edit the
 conf/local.conf to add the following dependency for pytorch native build:
 ```
-IMAGE_INSTALL_append = " python3-pip python3-wheel python3-pillow python3-setuptools python3-numpy python3-pyyaml python3-cffi python3-future cmake ninja packagegroup-core-buildessential"
+IMAGE_INSTALL_append = " python3-dev python3-pip python3-wheel python3-pillow python3-setuptools python3-numpy python3-pyyaml python3-cffi python3-future cmake ninja packagegroup-core-buildessential git git-perltools libxcrypt libxcrypt-dev"
 ```
 3. Build the BSP images like the following command:
 ```
@@ -17,6 +17,8 @@ $ bitbake imx-image-full
 4. Clone this repo and execute the build script on NXP aarch64 platform to generate wheel packages:
 ```
 $ cd /path/to/pytorch-release/src
+$ git config --global user.email "yourname@nxp.com"
+$ git config --global user.name "your name"
 $ ./build.sh
 ```
 
