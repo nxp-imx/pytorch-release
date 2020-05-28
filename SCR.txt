@@ -3,13 +3,13 @@ NXP Software Content Register
 --------------------------------------------
 
 Package:                   pytorch-release
-Outgoing License:          MIT
+Outgoing License:          BSD-3-Clause
 License File:              LICENSE
 Package Category:          Machine Learning
 Type of content:           source and binary
 Description and comments:  A release package for Python3 wrappers and examples for pytorch inference engine on aarch64
 						   wheel package is built from Origin
-Release Location:          GitHub - https://github.com/NXP
+Release Location:          GitHub - https://github.com/NXPMicro/pytorch-release
 Origin:					   GitHub - https://github.com/pytorch/pytorch
 
 --------------------------------------------
