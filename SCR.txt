@@ -10,6 +10,7 @@ Type of content:           source and binary
 Description and comments:  A release package for Python3 wrappers and examples for pytorch inference engine on aarch64
 						   wheel package is built from Origin
 Release Location:          GitHub - https://github.com/NXPMicro/pytorch-release
-Origin:					   GitHub - https://github.com/pytorch/pytorch
+Origin:					   NXP(BSD-3-Clause)
+						   Pytorch(BSD-3-Clause) - https://github.com/pytorch/pytorch
 
 --------------------------------------------
