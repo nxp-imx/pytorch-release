@@ -17,15 +17,16 @@ $ bitbake imx-image-full
 4. Clone this repo and execute the build script on NXP aarch64 platform to generate wheel packages:
 ```
 $ cd /path/to/pytorch-release/src
+$ git config --global http.sslverify false
 $ git config --global user.email "yourname@nxp.com"
 $ git config --global user.name "your name"
 $ ./build.sh
 ```
 
 # Installation
-$ pip3 install /path/to/torch-1.5.0-cp37-cp37m-linux_aarch64.whl
+$ pip3 install /path/to/torch-1.6.0-cp37-cp37m-linux_aarch64.whl
 
-$ pip3 install /path/to/torchvision-0.6.0-cp37-cp37m-linux_aarch64.whl
+$ pip3 install /path/to/torchvision-0.7.0-cp37-cp37m-linux_aarch64.whl
 
 # API overview
 
