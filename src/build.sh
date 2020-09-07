@@ -19,6 +19,7 @@ git submodule update --init --recursive
 git am $CWD/0001-QNNPACK-q8gemm-8x8-dq-aarch64-neon.S-fix-mov-operand.patch
 
 # build pytorch wheel file
+export MAX_JOBS=$(nproc)
 export USE_CUDA=0
 export USE_NNPACK=0
 export USE_QNNPACK=0
