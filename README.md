@@ -8,7 +8,7 @@ An example to show how to use the pytroch engine is included as well. Currently 
 2. Set up the build environment for one of the NXP aarch64 platforms and edit the
 conf/local.conf to add the following dependency for pytorch native build:
 ```
-IMAGE_INSTALL_append = " python3-dev python3-pip python3-wheel python3-pillow python3-setuptools python3-numpy python3-pyyaml python3-cffi python3-future cmake ninja packagegroup-core-buildessential git git-perltools libxcrypt libxcrypt-dev"
+IMAGE_INSTALL_append = " python3-dev python3-pip python3-wheel python3-pillow python3-setuptools python3-numpy python3-pyyaml python3-cffi python3-future cmake ninja packagegroup-core-buildessential git git-perltools libxcrypt libxcrypt-dev python3-typing-extensions"
 ```
 3. Build the BSP images like the following command:
 ```
@@ -17,16 +17,13 @@ $ bitbake imx-image-full
 4. Clone this repo and execute the build script on NXP aarch64 platform to generate wheel packages:
 ```
 $ cd /path/to/pytorch-release/src
-$ git config --global http.sslverify false
-$ git config --global user.email "yourname@nxp.com"
-$ git config --global user.name "your name"
 $ ./build.sh
 ```
 
 # Installation
-$ pip3 install /path/to/torch-1.6.0-cp37-cp37m-linux_aarch64.whl
+$ pip3 install /path/to/torch-1.7.1-cp38-cp38-linux_aarch64.whl
 
-$ pip3 install /path/to/torchvision-0.7.0-cp37-cp37m-linux_aarch64.whl
+$ pip3 install /path/to/torchvision-0.8.2-cp38-cp38-linux_aarch64.whl
 
 # API overview
 
