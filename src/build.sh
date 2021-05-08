@@ -1,6 +1,6 @@
 #！/bin/bash
 
-# Copyright 2020 NXP
+# Copyright 2021 NXP
 # SPDX-License-Identifier: BSD-3-Clause
 
 CWD=$(dirname $(readlink -f "$0"))

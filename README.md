@@ -21,9 +21,9 @@ $ ./build.sh
 ```
 
 # Installation
-$ pip3 install /path/to/torch-1.7.1-cp38-cp38-linux_aarch64.whl
+$ pip3 install /path/to/torch-1.7.1-cp39-cp39-linux_aarch64.whl
 
-$ pip3 install /path/to/torchvision-0.8.2-cp38-cp38-linux_aarch64.whl
+$ pip3 install /path/to/torchvision-0.8.2-cp39-cp39-linux_aarch64.whl
 
 # API overview
 
