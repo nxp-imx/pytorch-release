@@ -18,12 +18,16 @@ $ bitbake imx-image-full
 ```
 $ cd /path/to/pytorch-release/src
 $ ./build.sh
+
+# Note: to support build with c++11, add below in pytorch/third_party/benchmark/src/benchmark_register.h before running build.sh
+   #include<limits>
+
 ```
 
 # Installation
-$ pip3 install /path/to/torch-1.7.1-cp39-cp39-linux_aarch64.whl
+$ pip3 install /path/to/torch-X-cpY-linux_aarch64.whl
 
-$ pip3 install /path/to/torchvision-0.8.2-cp39-cp39-linux_aarch64.whl
+$ pip3 install /path/to/torchvision-X-cpY-linux_aarch64.whl
 
 # API overview
 
