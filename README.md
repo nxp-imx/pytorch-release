@@ -19,9 +19,12 @@ $ bitbake imx-image-full
 $ cd /path/to/pytorch-release/src
 $ ./build.sh
 
-# Note: to support build with c++11, add below in pytorch/third_party/benchmark/src/benchmark_register.h before running build.sh
+# Note:
+1. To support build with c++11, add below in pytorch/third_party/benchmark/src/benchmark_register.h before running build.sh
    #include<limits>
 
+2. To support build with g++12, add below in pytorch/test/cpp/api/CMakeLists.txt before running build.sh
+   target_compile_options_if_supported(test_api "-Wno-error=nonnull")
 ```
 
 # Installation
