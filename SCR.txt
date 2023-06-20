@@ -9,7 +9,7 @@ Package Category:          Machine Learning
 Type of content:           source and binary
 Description and comments:  A release package for Python3 wrappers and examples for pytorch inference engine on aarch64
 						   wheel package is built from Origin
-Release Location:          GitHub - https://github.com/NXPMicro/pytorch-release
+Release Location:          GitHub - https://github.com/nxp-imx/pytorch-release
 Origin:					   NXP(BSD-3-Clause)
 						   Pytorch(BSD-3-Clause) - https://github.com/pytorch/pytorch
 
